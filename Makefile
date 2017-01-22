@@ -351,7 +351,7 @@ ifeq ($(CPU_ONLY), 1)
 	TEST_FILTER := --gtest_filter="-*GPU*"
 	COMMON_FLAGS += -DCPU_ONLY
 endif
-
+	
 # Python layer support
 ifeq ($(WITH_PYTHON_LAYER), 1)
 	COMMON_FLAGS += -DWITH_PYTHON_LAYER
